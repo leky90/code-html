@@ -1,0 +1,16 @@
+{
+  "name": "kotech",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-file-include": "^2.3.0"
+  }
+}
