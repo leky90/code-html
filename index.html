@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+@@include('components/sections/head/index.html')
 
-<body class="bg-black">
-    @@include('components/home/header.html')
-    <div class="container mx-auto py-10 group">
-        <div class="bg-white h-[1px] w-0 transition-all duration-1000 group-hover:w-full mx-auto"></div>
-    </div>
+<body>
+    @@include('components/sections/header/index.html')
+    @@include('components/sections/hero/index.html')
+    @@include('components/home/about.html')
 </body>
 
 </html>

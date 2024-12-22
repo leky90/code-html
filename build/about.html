@@ -6,48 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Russo One', sans-serif;
+            overflow-y: scroll;
+        }
+
+        .font-russo {
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: red;            
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: gray;            
+        }
+    </style>
 </head>
 
 <body class="bg-black">
-    <header class="bg-white">
-    <div class="container mx-auto flex justify-between items-center">
-        <div>Logo <button class="py-4 px-6 bg-black text-white rounded bg-gradient-to-r from-purple-800 to-blue-600 hover:bg-black bg-no-repeat hover:bg-[left_56px] transition-all duration-200">Get a Quote</button></div>
+    <header class="bg-black h-24 fixed w-full">
+    <div class="flex justify-between items-center h-full p-4">
         <div>
-            <nav>
-    <ul class="flex items-center gap-4">
-        <li class="group [&:hover>ul]:block relative px-4 py-5 hover:after:w-full after:block after:content-[''] after:bg-black after:h-[1px] after:w-0 after:transition-all after:duration-200 after:mx-auto">
-            <a href="index.html">Home</a>
-            <ul class="hidden absolute top-full bg-white shadow-md min-w-[120px] w-max">
-                <li class="[&:hover>ul]:block relative border-b border-gray-200 px-4 py-2">
-                    <a href="index.html">Home 1</a>
-                    <ul class="hidden absolute top-full bg-white shadow-md min-w-[120px] w-max">
-                        <li class="border-b border-gray-200 px-4 py-2"><a href="index.html">Home 1</a>
-                        </li>
-                        <li class="border-b border-gray-200 px-4 py-2"><a href="about.html">Home 2 321
-                                321 321 321 321 31</a></li>
-                        <li class="border-b border-gray-200 px-4 py-2"><a href="contact.html">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="border-b border-gray-200 px-4 py-2">
-                    <a href="about.html">Home 2 321 321 321
-                        321 321 31</a>
-                </li>
-                <li class="border-b border-gray-200 px-4 py-2"><a href="contact.html">Home 3</a></li>
-            </ul>
+    <img src="https://themerange.net/html/gymfit/gymfit/assets/images/logo.svg" alt="logo">
+</div>
+        <nav class="h-full">
+    <ul class="flex gap-4 text-lg text-white h-full items-center">
+        <li class="px-1.5 box-content py-4 cursor-pointer h-full flex items-center group">
+            Home
+            <div class="invisible bg-white shadow p-6 text-black group-hover:visible absolute top-full left-1/2 -translate-x-1/2 container mx-auto grid grid-cols-4 gap-4">
+    <div>
+        <h3 class="border-b border-gray-200">PAGES</h3>
+        <nav class="flex flex-col gap-2 font-manrope py-4 text-sm">
+            <a class="hover:text-red-500 transition-colors duration-200">Home</a>
+            <a class="hover:text-red-500 transition-colors duration-200">About</a>
+            <a class="hover:text-red-500 transition-colors duration-200">Classes</a>
+            <a class="hover:text-red-500 transition-colors duration-200">Services</a>
+            <a class="hover:text-red-500 transition-colors duration-200">Portfolio</a>
+            <a class="hover:text-red-500 transition-colors duration-200">Shop</a>
+            <a class="hover:text-red-500 transition-colors duration-200">Blog</a>
+            <a class="hover:text-red-500 transition-colors duration-200">Contact</a>
+        </nav> 
+    </div>
+    <div>
+        <h3 class="border-b border-gray-200">PAGES</h3>
+    </div>
+    <div>
+        <h3 class="border-b border-gray-200">PAGES</h3>
+    </div>
+    <div>
+        <h3 class="border-b border-gray-200">PAGES</h3>
+    </div>
+</div>
         </li>
-        <li class="group relative px-4 py-5 hover:after:w-full after:block after:content-[''] after:bg-black after:h-[1px] after:w-0 after:transition-all after:duration-200 after:mx-auto">
-            <a href="about.html">About</a>
+        <li class="px-1.5 cursor-pointer h-full py-4 box-content flex items-center group">
+            About
+            <ul style="--count: 6; --duration: 500ms;" class="font-manrope group-hover:visible group-hover:h-[calc(32px+(var(--count)*40px)+((var(--count)-1)*2px))] ease-out w-60 h-0 transition-all duration-[var(--duration)] invisible shadow space-y-0.5 text-sm text-black bg-white p-4 absolute top-full">
+    <li style="--index: 1" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">About</li>
+    <li style="--index: 2" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">FAQ</li>
+    <li style="--index: 3" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Price</li>
+    <li style="--index: 4" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Testimonials</li>
+    <li style="--index: 5" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Team</li>
+    <li style="--index: 6" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Contact</li>
+</ul>
         </li>
-        <li class="group relative px-4 py-5 hover:after:w-full after:block after:content-[''] after:bg-black after:h-[1px] after:w-0 after:transition-all after:duration-200 after:mx-auto">
-            <a href="contact.html">Contact</a>            
+        <li class="px-1.5 cursor-pointer h-full py-4 box-content flex items-center group">
+            Classes
+            <ul style="--count: 6; --duration: 500ms;" class="font-manrope group-hover:visible group-hover:h-[calc(32px+(var(--count)*40px)+((var(--count)-1)*2px))] ease-out w-60 h-0 transition-all duration-[var(--duration)] invisible shadow space-y-0.5 text-sm text-black bg-white p-4 absolute top-full">
+    <li style="--index: 1" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">About</li>
+    <li style="--index: 2" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">FAQ</li>
+    <li style="--index: 3" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Price</li>
+    <li style="--index: 4" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Testimonials</li>
+    <li style="--index: 5" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Team</li>
+    <li style="--index: 6" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Contact</li>
+</ul>
         </li>
+        <li class="px-1.5 cursor-pointer h-full py-4 box-content flex items-center group">
+            Services
+            <ul style="--count: 6; --duration: 500ms;" class="font-manrope group-hover:visible group-hover:h-[calc(32px+(var(--count)*40px)+((var(--count)-1)*2px))] ease-out w-60 h-0 transition-all duration-[var(--duration)] invisible shadow space-y-0.5 text-sm text-black bg-white p-4 absolute top-full">
+    <li style="--index: 1" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">About</li>
+    <li style="--index: 2" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">FAQ</li>
+    <li style="--index: 3" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Price</li>
+    <li style="--index: 4" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Testimonials</li>
+    <li style="--index: 5" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Team</li>
+    <li style="--index: 6" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Contact</li>
+</ul>
+        </li>
+        <li class="px-1.5 h-full flex items-center cursor-pointer">
+            Portfolio
+            <ul style="--count: 6; --duration: 500ms;" class="font-manrope group-hover:visible group-hover:h-[calc(32px+(var(--count)*40px)+((var(--count)-1)*2px))] ease-out w-60 h-0 transition-all duration-[var(--duration)] invisible shadow space-y-0.5 text-sm text-black bg-white p-4 absolute top-full">
+    <li style="--index: 1" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">About</li>
+    <li style="--index: 2" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">FAQ</li>
+    <li style="--index: 3" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Price</li>
+    <li style="--index: 4" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Testimonials</li>
+    <li style="--index: 5" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Team</li>
+    <li style="--index: 6" class="bg-gray-100 py-2.5 px-4 transition-opacity ease-out opacity-0 group-hover:opacity-100 duration-[var(--duration)/var(--count)] group-hover:delay-[calc(var(--duration)/var(--count)*var(--index))]">Contact</li>
+</ul>
+        </li>
+        <li class="px-1.5 h-full flex items-center cursor-pointer">Shop</li>
+        <li class="px-1.5 h-full flex items-center cursor-pointer">Blog</li>
+        <li class="px-1.5 h-full flex items-center cursor-pointer">Contact</li>
     </ul>
 </nav>
-        </div>
-        <div>
-            <button class="py-4 px-6 bg-black text-white rounded bg-gradient-to-r from-purple-800 to-blue-600 hover:bg-black hover:bg-none">Get a Quote</button>
-        </div>
+        <div class="flex gap-4 font-manrope font-bold">
+    <button class="bg-white text-black h-14 px-8">Join Now <i class="fa fa-plus" aria-hidden="true"></i></button>
+    <button class="bg-white hover:bg-red-500 transition-colors duration-500 hover:text-white text-black size-14"><i class="fa fa-search text-xl" aria-hidden="true"></i></button>
+    <button class="bg-white hover:bg-red-500 transition-colors duration-500 hover:text-white text-black size-14"><i class="fa fa-bars text-xl" aria-hidden="true"></i></button>
+</div>
     </div>
 </header>
     <div class="container mx-auto py-10 group">
